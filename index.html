@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="V.V Construction & Sales – Premium construction and building materials company. Building the future with strength and precision." />
+    <meta name="keywords"
+        content="construction, building materials, renovation, commercial, residential, V.V Construction" />
+    <title>V.V Construction & Sales | Building the Future</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Cursor Glow -->
+    <div id="cursor-glow" aria-hidden="true"></div>
+
+    <!-- Page Loader -->
+    <div id="page-loader">
+        <div class="loader-inner">
+            <div class="loader-logo">V.V</div>
+            <div class="loader-bar">
+                <div class="loader-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header id="navbar">
+        <nav class="nav-container">
+            <a href="#home" class="nav-logo" id="nav-logo-link">
+                <span class="logo-vv">V.V</span>
+                <span class="logo-text">Construction <span class="logo-amp">&</span> Sales</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button id="dark-mode-toggle" class="dark-toggle" aria-label="Toggle dark mode"
+                        title="Toggle dark mode">
+                        <span class="toggle-icon">☀️</span>
+                    </button>
+                </li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+        <canvas id="particles-canvas" aria-hidden="true"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in-hero">
+            <p class="hero-eyebrow">Premium Construction &amp; Sales</p>
+            <h1 class="hero-title">Building the Future<br /><span class="gold-text">with Strength &amp; Precision</span>
+            </h1>
+            <p class="hero-subtitle">Delivering world-class construction solutions for residential, commercial, and
+                industrial projects across the region.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-gold ripple" id="hero-btn-projects">View Projects</a>
+                <a href="#contact" class="btn btn-outline ripple" id="hero-btn-quote">Get a Quote</a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint" aria-hidden="true">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrap reveal-left">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+                        alt="V.V Construction team reviewing blueprints on site" class="about-img" loading="lazy" />
+                    <div class="about-badge">
+                        <span class="badge-number">15+</span>
+                        <span class="badge-label">Years of Excellence</span>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <p class="section-eyebrow">Who We Are</p>
+                    <h2 class="section-title">A Legacy of <span class="gold-text">Precision</span> &amp; Trust</h2>
+                    <p class="about-text">
+                        V.V Construction &amp; Sales has been at the forefront of the construction industry for over 15
+                        years. We combine cutting-edge engineering with time-tested craftsmanship to deliver projects
+                        that stand the test of time.
+                    </p>
+                    <p class="about-text">
+                        From residential homes to large-scale commercial complexes, our team of certified professionals
+                        ensures every project meets the highest standards of safety, quality, and design.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">ISO Certified</span>
+                        <span class="tag">Safety First</span>
+                        <span class="tag">Award Winning</span>
+                    </div>
+                    <div class="counters-grid">
+                        <div class="counter-item">
+                            <span class="counter-number" data-target="250">0</span><span class="counter-plus">+</span>
+                            <p class="counter-label">Projects Completed</p>
+                        </div>
+                        <div class="counter-item">
+                            <span class="counter-number" data-target="100">0</span><span class="counter-plus">+</span>
+                            <p class="counter-label">Happy Clients</p>
+                        </div>
+                        <div class="counter-item">
+                            <span class="counter-number" data-target="15">0</span><span class="counter-plus">+</span>
+                            <p class="counter-label">Years Experience</p>
+                        </div>
+                        <div class="counter-item">
+                            <span class="counter-number" data-target="50">0</span><span class="counter-plus">+</span>
+                            <p class="counter-label">Expert Team</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services" class="services section-padding dark-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <p class="section-eyebrow">What We Offer</p>
+                <h2 class="section-title">Our <span class="gold-text">Services</span></h2>
+                <p class="section-subtitle">Comprehensive construction and material solutions tailored to your needs.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal-up" style="--delay: 0.1s">
+                    <div class="service-icon">🏠</div>
+                    <h3 class="service-title">Residential Construction</h3>
+                    <p class="service-desc">Custom homes built to your vision — from foundation to finishing touches,
+                        with unmatched quality and care.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal-up" style="--delay: 0.2s">
+                    <div class="service-icon">🏢</div>
+                    <h3 class="service-title">Commercial Projects</h3>
+                    <p class="service-desc">Office towers, retail complexes, and industrial facilities built to
+                        international standards and delivered on time.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal-up" style="--delay: 0.3s">
+                    <div class="service-icon">🧱</div>
+                    <h3 class="service-title">Material Supply &amp; Sales</h3>
+                    <p class="service-desc">Premium-grade building materials — cement, steel, tiles, and more — sourced
+                        from certified suppliers.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal-up" style="--delay: 0.4s">
+                    <div class="service-icon">🔨</div>
+                    <h3 class="service-title">Renovation Services</h3>
+                    <p class="service-desc">Transform existing spaces with modern renovations that enhance value,
+                        aesthetics, and functionality.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal-up" style="--delay: 0.5s">
+                    <div class="service-icon">📐</div>
+                    <h3 class="service-title">Architecture &amp; Design</h3>
+                    <p class="service-desc">Expert architectural planning and interior design services to bring your
+                        dream project to life.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal-up" style="--delay: 0.6s">
+                    <div class="service-icon">🏗️</div>
+                    <h3 class="service-title">Project Management</h3>
+                    <p class="service-desc">End-to-end project management ensuring timelines, budgets, and quality
+                        benchmarks are always met.</p>
+                    <div class="service-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <p class="section-eyebrow">Our Portfolio</p>
+                <h2 class="section-title">Featured <span class="gold-text">Projects</span></h2>
+                <p class="section-subtitle">A showcase of our finest work across multiple sectors.</p>
+            </div>
+            <div class="filter-buttons reveal-up">
+                <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+                <button class="filter-btn" data-filter="residential" id="filter-residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial" id="filter-commercial">Commercial</button>
+                <button class="filter-btn" data-filter="renovation" id="filter-renovation">Renovation</button>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <div class="project-card" data-category="residential">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80"
+                        alt="Luxury Residential Villa" loading="lazy" />
+                    <div class="project-overlay">
+                        <span class="project-category">Residential</span>
+                        <h3 class="project-name">Luxury Villa, Sector 12</h3>
+                        <button class="btn-view ripple">View Project</button>
+                    </div>
+                </div>
+                <div class="project-card" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80"
+                        alt="Corporate Office Tower" loading="lazy" />
+                    <div class="project-overlay">
+                        <span class="project-category">Commercial</span>
+                        <h3 class="project-name">Corporate HQ Tower</h3>
+                        <button class="btn-view ripple">View Project</button>
+                    </div>
+                </div>
+                <div class="project-card" data-category="renovation">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80"
+                        alt="Modern Kitchen Renovation" loading="lazy" />
+                    <div class="project-overlay">
+                        <span class="project-category">Renovation</span>
+                        <h3 class="project-name">Premium Kitchen Remodel</h3>
+                        <button class="btn-view ripple">View Project</button>
+                    </div>
+                </div>
+                <div class="project-card" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80"
+                        alt="Shopping Mall Complex" loading="lazy" />
+                    <div class="project-overlay">
+                        <span class="project-category">Commercial</span>
+                        <h3 class="project-name">Grand Mall Complex</h3>
+                        <button class="btn-view ripple">View Project</button>
+                    </div>
+                </div>
+                <div class="project-card" data-category="residential">
+                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&q=80"
+                        alt="Modern Family Home" loading="lazy" />
+                    <div class="project-overlay">
+                        <span class="project-category">Residential</span>
+                        <h3 class="project-name">Modern Family Residence</h3>
+                        <button class="btn-view ripple">View Project</button>
+                    </div>
+                </div>
+                <div class="project-card" data-category="renovation">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
+                        alt="Office Renovation" loading="lazy" />
+                    <div class="project-overlay">
+                        <span class="project-category">Renovation</span>
+                        <h3 class="project-name">Executive Office Revamp</h3>
+                        <button class="btn-view ripple">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section id="testimonials" class="testimonials section-padding dark-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <p class="section-eyebrow">Client Reviews</p>
+                <h2 class="section-title">What Our <span class="gold-text">Clients Say</span></h2>
+            </div>
+            <div class="testimonial-slider-wrap reveal-up">
+                <div class="testimonial-slider" id="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="quote-icon">❝</div>
+                        <p class="testimonial-text">"V.V Construction delivered our dream home on time and within
+                            budget. The quality of work is exceptional — every detail was handled with precision and
+                            care. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">RK</div>
+                            <div>
+                                <strong class="author-name">Rajesh Kumar</strong>
+                                <span class="author-role">Homeowner, Sector 12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="quote-icon">❝</div>
+                        <p class="testimonial-text">"We hired V.V for our corporate headquarters and they exceeded every
+                            expectation. Professional team, transparent communication, and outstanding results. A true
+                            partner in construction."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SM</div>
+                            <div>
+                                <strong class="author-name">Sunita Mehta</strong>
+                                <span class="author-role">CEO, Mehta Enterprises</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="quote-icon">❝</div>
+                        <p class="testimonial-text">"The renovation of our retail space was completed flawlessly. V.V's
+                            team brought creative ideas and executed them perfectly. Our store looks absolutely stunning
+                            now!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">AP</div>
+                            <div>
+                                <strong class="author-name">Arjun Patel</strong>
+                                <span class="author-role">Retail Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="quote-icon">❝</div>
+                        <p class="testimonial-text">"Their material supply division is top-notch. Premium quality cement
+                            and steel delivered on schedule, with competitive pricing. V.V is our go-to supplier for all
+                            projects."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">DV</div>
+                            <div>
+                                <strong class="author-name">Deepak Verma</strong>
+                                <span class="author-role">Real Estate Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots" id="slider-dots">
+                    <button class="dot active" data-index="0" aria-label="Testimonial 1"></button>
+                    <button class="dot" data-index="1" aria-label="Testimonial 2"></button>
+                    <button class="dot" data-index="2" aria-label="Testimonial 3"></button>
+                    <button class="dot" data-index="3" aria-label="Testimonial 4"></button>
+                </div>
+                <div class="slider-arrows">
+                    <button class="slider-arrow" id="prev-slide" aria-label="Previous testimonial">&#8592;</button>
+                    <button class="slider-arrow" id="next-slide" aria-label="Next testimonial">&#8594;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CALL TO ACTION SECTION ===== -->
+    <section id="cta" class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="container cta-content reveal-up">
+            <h2 class="cta-title">Ready to Build <span class="gold-text">With Confidence?</span></h2>
+            <p class="cta-subtitle">Let's turn your vision into reality. Our experts are ready to guide you from concept
+                to completion.</p>
+            <a href="#contact" class="btn btn-gold btn-large ripple" id="cta-btn">Request Consultation</a>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT / FOOTER SECTION ===== -->
+    <section id="contact" class="contact-section section-padding dark-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <p class="section-eyebrow">Get In Touch</p>
+                <h2 class="section-title">Contact <span class="gold-text">Us</span></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <strong>Address</strong>
+                            <p>3/234A pillaiyar kovil street, kaniyakulam, Nagercoil – 629003</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <strong>Phone</strong>
+                            <p><a href="tel:+917358223745">+91 7358223745</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p><a href="mailto:info@vvconstruction.com">info@vvconstruction.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕐</span>
+                        <div>
+                            <strong>Working Hours</strong>
+                            <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Instagram">in</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">Li</a>
+                        <a href="#" class="social-link" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+                <div class="contact-form-wrap reveal-right">
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your full name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000" />
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="residential">Residential Construction</option>
+                                <option value="commercial">Commercial Projects</option>
+                                <option value="materials">Material Supply</option>
+                                <option value="renovation">Renovation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold btn-full ripple" id="form-submit">Send
+                            Message</button>
+                        <p class="form-success" id="form-success" style="display:none;">✅ Thank you! We'll get back to
+                            you within 24 hours.</p>
+                    </form>
+                </div>
+            </div>
+            <div class="map-wrap reveal-up">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.9!2d72.8777!3d19.0760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA0JzMzLjYiTiA3MsKwNTInMzkuNyJF!5e0!3m2!1sen!2sin!4v1234567890"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="V.V Construction Location"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="logo-vv">V.V</span>
+                <span class="logo-text">Construction <span class="logo-amp">&</span> Sales</span>
+            </div>
+            <p class="footer-copy">&copy; 2026 V.V Construction &amp; Sales. All rights reserved. Crafted with
+                precision.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== AI CHAT ASSISTANT ===== -->
+    <div id="ai-chat-btn" class="ai-chat-btn" aria-label="Open V.V AI Assistant" title="Ask V.V AI Assistant">
+        <span class="ai-icon">🤖</span>
+        <span class="ai-label">Ask V.V AI</span>
+    </div>
+    <div id="ai-chat-window" class="ai-chat-window" role="dialog" aria-label="V.V AI Assistant" aria-hidden="true">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <span class="chat-avatar">🤖</span>
+                <div>
+                    <strong>V.V AI Assistant</strong>
+                    <span class="chat-status">Online</span>
+                </div>
+            </div>
+            <button id="ai-chat-close" class="chat-close" aria-label="Close chat">✕</button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="chat-msg bot">
+                <span class="msg-avatar">🤖</span>
+                <div class="msg-bubble">Hello! I'm the V.V AI Assistant. I can help you with cost estimates, material
+                    suggestions, and FAQs. How can I help you today?</div>
+            </div>
+            <div class="chat-quick-replies" id="quick-replies">
+                <button class="quick-reply" data-msg="Estimate construction cost">💰 Cost Estimate</button>
+                <button class="quick-reply" data-msg="Suggest materials for my project">🧱 Material Suggestions</button>
+                <button class="quick-reply" data-msg="Book an appointment">📅 Book Appointment</button>
+                <button class="quick-reply" data-msg="What services do you offer?">🏗️ Our Services</button>
+            </div>
+        </div>
+        <div class="chat-input-wrap">
+            <input type="text" id="chat-input" class="chat-input" placeholder="Type your question..."
+                aria-label="Chat message input" />
+            <button id="chat-send" class="chat-send" aria-label="Send message">➤</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
